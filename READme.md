@@ -1,29 +1,77 @@
-<h1 align="center">Hi 👋, I'm Emmett (애멧) Pennington</h1>
-<h3 align="center">A passionate frontend developer from Kenai, Alaska</h3>
+# Mobile Restaurant Menu
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=egpennington" alt="egpennington" /></a> </p>
+This project from Scrimba Front End Bootcamp is a mobile restaurant menu application designed to render menu items using JavaScript. Users can add and remove items, and there is a payment modal with compulsory form inputs. Additionally, there are stretch goals to add a menu meal discount feature and allow users to rate their experience.
 
-- 🔭 I’m currently working on [Can I Drive App](https://oldenough.netlify.app/)
+## Design Specification
 
-- 🌱 I’m currently learning **Scrimba Front End Developer Boot Camp**
+Follow the design specification provided in the Figma file: Figma Design Spec.
+[https://www.figma.com/design/Hdgwo69Dym9vVsxbuPbl0h/Mobile-Restaurant-Menu?node-id=0-1&node-type=canvas]
 
-- 👨‍💻 All of my projects are available at [https://github.com/egpennington?tab=repositories](https://github.com/egpennington?tab=repositories)
+## Features
 
-- 📫 How to reach me **egpennington@hotmail.com**
+- Render menu items using JavaScript
+- Add and remove menu items
+- Payment modal with compulsory form inputs
+- Stretch Goals:
+  - Add a menu meal discount feature
+  - Allow users to rate their experience
 
-- ⚡ Fun fact **I was a professional magician.**
+## Installation
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/emmettpenn23" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="emmettpenn23" height="30" width="40" /></a>
-<a href="https://fb.com/emmett pennington" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="emmett pennington" height="30" width="40" /></a>
-<a href="https://discord.gg/emmettpenn23" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="emmettpenn23" height="30" width="40" /></a>
-</p>
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/egpennington/mobile-restaurant-menu.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd mobile-restaurant-menu
+    ```
+3. Open `index.html` in your browser to view the application.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> </p>
+## Usage
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=egpennington&show_icons=true&locale=en&layout=compact" alt="egpennington" /></p>
+### Adding and Removing Menu Items
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=egpennington&show_icons=true&locale=en" alt="egpennington" /></p>
+- To add a menu item, click the "Add Item" button and fill in the required details.
+- To remove a menu item, click the "Remove" button next to the item you wish to remove.
 
+### Payment Modal
+
+- Click the "Checkout" button to open the payment modal.
+- Fill in all compulsory form inputs to complete the payment process.
+
+### Stretch Goals
+
+- **Menu Meal Discount**: Apply discounts to specific menu items or meals.
+- **User Ratings**: Allow users to rate their dining experience.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature-branch
+    ```
+3. Make your changes and commit them:
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature-branch
+    ```
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- Design inspired by the Scrimba Figma file specs.
