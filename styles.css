@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    background: #303030;
+    color: #faf9f6;
+    width: 600px;
+}
+
+.food-display {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 600px;
+    border: 1px solid red;
+}
+
+.emoji {
+    font-size: 40px;
+    margin: 0 10px 0 0;
+    padding-bottom: 20px;
+}
+
+.food-item {
+    margin-left: 20px;
+}
+
+.add-item {
+    border: 1px solid #333;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.add-item:hover {
+    opacity: 0.65;
+    background: #303030;
+    color: #faf9f6;
+}
