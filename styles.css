@@ -28,8 +28,8 @@ body {
     display: flex;
     align-items: center;
     height: 200px;
-    width: 600px;
-    border: 1px solid red;
+    width: 500px;
+    border-bottom: 1px solid #8d99ae;
 }
 
 .emoji {
@@ -48,10 +48,12 @@ body {
     padding: 10px;
     margin-left: auto;
     margin-right: 20px;
+    transition: 0.3s;
 }
 
 .add-item:hover {
     opacity: 0.65;
-    background: #303030;
+    background: #80ed99;
+    border: none;
     color: #faf9f6;
 }
