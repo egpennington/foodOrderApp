@@ -6,6 +6,9 @@
     <title>Jimmy's Diner Ordering App</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header" class="header">
@@ -13,6 +16,25 @@
     </header>
     <main id="data-input-el" class="data-input-el">        
     </main>
+
+    <div id="modal-el" class="modal-el">
+        <h2>Your order</h2>
+        <div class="food-list">
+            <h2>Pizza</h2> 
+            <p id="remove-el" class="remove-el">Remove</p>
+            <h2 class="price">$14</h2>
+        </div>
+        <div class="food-list">
+            <h2>Beer</h2> 
+            <p id="remove-el" class="remove-el">Remove</p>
+            <h2 class="price">$12</h2>
+        </div>
+        <div class="food-list total">
+            <h2>Total Price</h2>            
+            <h2 id="price-total-el" class="price">$26</h2>
+        </div>
+        <button id="btn-el" class="btn">Complete order</button>
+    </div>
     
 <script src="main.js" type="module"></script>    
 </body>

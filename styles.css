@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
+    font-family: "Smythe", system-ui, sans-serif;
 }
 
 .header {
@@ -30,6 +30,7 @@ body {
     height: 200px;
     width: 500px;
     border-bottom: 1px solid #8d99ae;
+    margin-bottom: 15px;
 }
 
 .emoji {
@@ -56,4 +57,59 @@ body {
     background: #80ed99;
     border: none;
     color: #faf9f6;
+}
+
+/* order modal popup */
+.modal-el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+}
+
+.food-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    width: 360px;
+    margin-top: 20px;
+}
+
+.food-list p.remove-el:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    text-decoration: line-through;
+    color: #e63946;
+}
+
+.food-list h2.price {
+    justify-self: end;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #333;
+    padding-top: 20px;
+   
+}
+
+.btn {
+    background: #16DB99;
+    color: #faf9f6;
+    width: 360px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.7;
 }
