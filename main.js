@@ -13,11 +13,18 @@ function getFoodItemArr(foodArr) {
                     <p>${ingredients}</p>
                     <h3>$${price}</h3>
                 </div>
-            <i id="add-item-el" class="fa-solid fa-plus add-item"></i>
+            <i class="fa-solid fa-plus add-item"></i>
         </div>
         `
-    })
+    }).join('')
 }
 
-
 document.getElementById('data-input-el').innerHTML = getFoodItemArr(menuArray)
+
+const addItemEls = document.querySelectorAll(".add-item")
+
+addItemEls.forEach(addItemEl => {
+    addItemEl.addEventListener("click", function() {
+        console.log("item added");
+    })
+})
