@@ -1,7 +1,6 @@
 import { menuArray } from "/data.js"
 const message = 'Hello World'
 
-
 function getFoodItemArr(foodArr) {
     return menuArray.map(foodItem => {
         const { name, ingredients, id, price, emoji } = foodItem
@@ -14,7 +13,7 @@ function getFoodItemArr(foodArr) {
                     <p>${ingredients}</p>
                     <h3>$${price}</h3>
                 </div>
-            <i class="fa-solid fa-plus add-item"></i>
+            <i id="add-item-el" class="fa-solid fa-plus add-item"></i>
         </div>
         `
     })
