@@ -69,6 +69,10 @@ body {
     display: none;
 }
 
+.modal-title {
+    text-align: center;
+}
+
 .food-list {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -112,4 +116,8 @@ body {
 
 .btn:hover {
     opacity: 0.7;
+}
+
+.show {
+    display: block;
 }

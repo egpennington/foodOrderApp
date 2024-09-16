@@ -25,6 +25,7 @@ const addItemEls = document.querySelectorAll(".add-item")
 
 addItemEls.forEach(addItemEl => {
     addItemEl.addEventListener("click", function() {
-        console.log("item added");
+        console.log("item added")
+        document.querySelector(".modal-el").classList.add("show")
     })
 })
