@@ -1,19 +1,5 @@
 import { menuArray } from "/data.js"
 
-// ======== Payment form data ====
-const paymentForm = document.getElementById("paymentForm")
-
-paymentForm.addEventListener("submit", function(e){
-    e.preventDefault()
-
-    const paymentFormData = new FormData(paymentForm)
-    
-    const name = paymentFormData.get("name")
-    console.log(name)
-
-    paymentForm.reset()
-})
-
 // ======= Food items array =====
 function getFoodItemArr(foodArr) {
     return menuArray.map(foodItem => {
@@ -57,7 +43,6 @@ addItemEls.forEach(addItemEl => {
                 <p class="remove-el">Remove</p>
                 <h2 class="price">$${item.price}</h2>
             `
-
             foodListContainer.appendChild(foodListEl)
 
             // Update total price
@@ -78,4 +63,28 @@ const paymentModal = document.querySelector(".payment-modal")
 orderBtn.addEventListener("click", function(){
     paymentModal.style.display= "block"
     console.log("ordered entered")
+})
+
+// ======== Payment form data ====
+const paymentForm = document.getElementById("paymentForm")
+
+paymentForm.addEventListener("submit", function(e){
+    e.preventDefault()
+
+    const paymentFormData = new FormData(paymentForm)
+    
+    const name = paymentFormData.get("name")
+
+    orderModal.innerHTML = `
+       <div id="order-complete" class="order-complete">
+         <p>Thanks, ${name}! Your order is on it's way!</p>
+       </div>
+       `
+    paymentModal.style.display= "none"
+
+    paymentForm.reset()
+
+    setTimeout(() => {
+        location.reload()
+    }, 5000)    
 })

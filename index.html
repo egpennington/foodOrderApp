@@ -32,11 +32,10 @@
     <div id="payment-modal" class="payment-modal">
         <h2>Enter card details</h2>
         <form id="paymentForm" autocomplete="on">
-           <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2">
-           <input type="password" id="ccNum" name="ccNum" placeholder="Enter card number" required pattern="\d{8,}" title="Eight or more characters, no letters or special characters" inputmode="numeric">
-           
-           <input type="password" id="cvvNum" name="cvvNum" placeholder="Enter CVV" required>
-           <button type="submit" id="btn-el" class="btn">Pay</button>
+           <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2" aria-label="enter name">
+           <input type="password" id="ccNum" name="ccNum" placeholder="Enter card number" required pattern="\d{8,}" title="Eight or more characters, no letters or special characters" inputmode="numeric" aria-label="enter credit card number">           
+           <input type="password" id="cvvNum" name="cvvNum" placeholder="Enter CVV"  aria-label="enter CVV number" minlength="3">
+           <button type="submit" id="submit-btn" class="btn">Pay</button>
         </form>        
     </div>
     

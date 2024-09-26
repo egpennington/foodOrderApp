@@ -197,4 +197,19 @@ body {
   .payment-modal .btn:hover {
     opacity: 0.7;
   }
+
+  .order-complete {
+    width: 500px;
+    height: 120px;
+    padding: 20px;
+    color: #065F46;
+    background: #ECFDF5;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 3px;
+  }
   
