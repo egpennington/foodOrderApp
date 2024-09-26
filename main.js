@@ -1,6 +1,20 @@
 import { menuArray } from "/data.js"
-const message = 'Hello World'
 
+// ======== Payment form data ====
+const paymentForm = document.getElementById("paymentForm")
+
+paymentForm.addEventListener("submit", function(e){
+    e.preventDefault()
+
+    const paymentFormData = new FormData(paymentForm)
+    
+    const name = paymentFormData.get("name")
+    console.log(name)
+
+    paymentForm.reset()
+})
+
+// ======= Food items array =====
 function getFoodItemArr(foodArr) {
     return menuArray.map(foodItem => {
         const { name, ingredients, id, price, emoji } = foodItem
@@ -22,7 +36,7 @@ function getFoodItemArr(foodArr) {
 document.getElementById('data-input-el').innerHTML = getFoodItemArr(menuArray)
 
 const addItemEls = document.querySelectorAll(".add-item")
-const modalEl = document.getElementById("modal-el")
+const orderModal = document.getElementById("order-modal")
 const foodListContainer = document.getElementById("food-list-container")
 const priceTotalEl = document.getElementById("price-total-el")
 
@@ -50,9 +64,18 @@ addItemEls.forEach(addItemEl => {
             totalPrice += item.price
             priceTotalEl.innerText = `$${totalPrice}`
 
-            modalEl.classList.add("show");
+            orderModal.classList.add("show")
         } else {
             console.error('Item not found in menuArray')
         }
     });
 });
+
+// ======== Payment Modal display ========
+const orderBtn = document.getElementById("order-btn")
+const paymentModal = document.querySelector(".payment-modal")
+
+orderBtn.addEventListener("click", function(){
+    paymentModal.style.display= "block"
+    console.log("ordered entered")
+})

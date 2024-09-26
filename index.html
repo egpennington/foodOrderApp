@@ -17,26 +17,27 @@
     <main id="data-input-el" class="data-input-el">        
     </main>
 
-    <div id="modal-el" class="modal-el">
-        <h2 class="modal-title">Your order</h2>
+    <!-- ============ Order modal ============================ -->
+    <div id="order-modal" class="order-modal">
+        <h2 class="order-modal-title">Your order</h2>
         <div id="food-list-container"></div>
         <div class="food-list total">
             <h2>Total Price</h2>
             <h2 id="price-total-el" class="price">$0</h2>
         </div>
-        <button id="btn-el" class="btn">Complete order</button>
+        <button id="order-btn" class="btn">Complete order</button>
     </div>
 
-    <!-- ====================================================== -->
-    <div id="modal-order" class="modal-order">
+    <!-- ============== Payment modal ========================== -->
+    <div id="payment-modal" class="payment-modal">
         <h2>Enter card details</h2>
-        <form>
-           <input type="text" placeholder="`Enter your name" required>
-           <input type="number" placeholder="Enter card number" required>
-           <input type="number" placeholder="Enter CVV" required>
-        </form>
-
-        <button id="btn-el" class="btn">Pay</button>
+        <form id="paymentForm" autocomplete="on">
+           <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2">
+           <input type="password" id="ccNum" name="ccNum" placeholder="Enter card number" required pattern="\d{8,}" title="Eight or more characters, no letters or special characters" inputmode="numeric">
+           
+           <input type="password" id="cvvNum" name="cvvNum" placeholder="Enter CVV" required>
+           <button type="submit" id="btn-el" class="btn">Pay</button>
+        </form>        
     </div>
     
 <script src="main.js" type="module"></script>    
