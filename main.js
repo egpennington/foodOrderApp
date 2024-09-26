@@ -45,6 +45,13 @@ addItemEls.forEach(addItemEl => {
             `
             foodListContainer.appendChild(foodListEl)
 
+            foodListEl.querySelector(".remove-el").addEventListener("click", function(){
+                foodListEl.remove()
+
+            totalPrice -= item.price
+            priceTotalEl.innerText = `$${totalPrice}`             
+            })
+
             // Update total price
             totalPrice += item.price
             priceTotalEl.innerText = `$${totalPrice}`
@@ -54,7 +61,7 @@ addItemEls.forEach(addItemEl => {
             console.error('Item not found in menuArray')
         }
     });
-});
+})
 
 // ======== Payment Modal display ========
 const orderBtn = document.getElementById("order-btn")
