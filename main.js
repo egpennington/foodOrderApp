@@ -75,6 +75,8 @@ orderBtn.addEventListener("click", function(){
 
 // ======== Payment form data ====
 const paymentForm = document.getElementById("paymentForm")
+const uuid = uuidv4();
+const shortUuid = uuid.slice(0, 8);
 
 paymentForm.addEventListener("submit", function(e){
     e.preventDefault()
@@ -86,6 +88,7 @@ paymentForm.addEventListener("submit", function(e){
     orderModal.innerHTML = `
        <div id="order-complete" class="order-complete">
          <p>Thanks, ${name}! Your order is on it's way!</p>
+         <p class="txt-sm">Order number is <span class="txt-bold">${shortUuid}</span>
          <div id="experience-rating" class="experience-rating">
             <p>Please rate your experience today</p>
             <span class="like-detail">
@@ -111,3 +114,4 @@ paymentForm.addEventListener("submit", function(e){
             }, 2000)            
    })
 })
+

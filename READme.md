@@ -2,6 +2,10 @@
 
 This project from Scrimba Front End Bootcamp is a mobile restaurant menu application designed to render menu items using JavaScript. Users can add and remove items, and there is a payment modal with compulsory form inputs. Additionally, there are stretch goals to add a menu meal discount feature and allow users to rate their experience.
 
+## Live Site
+Uploaded to Netlify.app
+https://www.jimmysdinner.netlify.app
+
 ## Design Specification
 
 Follow the design specification provided in the Figma file: Figma Design Spec.
@@ -20,7 +24,7 @@ Follow the design specification provided in the Figma file: Figma Design Spec.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/egpennington/mobile-restaurant-menu.git
+    git clone https://github.com/egpennington/foodOrderApp.git    
     ```
 2. Navigate to the project directory:
     ```bash
@@ -44,6 +48,7 @@ Follow the design specification provided in the Figma file: Figma Design Spec.
 
 - **Menu Meal Discount**: Apply discounts to specific menu items or meals.
 - **User Ratings**: Allow users to rate their dining experience.
+- **UUID**: Added UUID for each order to have unique order number.
 
 ## Technologies Used
 
@@ -74,4 +79,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgements
 
-- Design inspired by the Scrimba Figma file specs.
+- Design inspired by the Scrimba Figma file specs from MOD5.
