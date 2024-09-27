@@ -70,6 +70,13 @@ const paymentModal = document.querySelector(".payment-modal")
 
 orderBtn.addEventListener("click", function(){
     paymentModal.style.display= "block"
+    document.body.style.backgroundColor = "#939393"
+
+    const emojis = document.getElementsByClassName("emoji");
+
+    for (let i = 0; i < emojis.length; i++) {
+    emojis[i].style.opacity = "0.2";
+    }
     console.log("ordered entered")
 })
 
