@@ -47,8 +47,9 @@ Follow the design specification provided in the Figma file: Figma Design Spec.
 ### Stretch Goals
 
 - **Menu Meal Discount**: Apply discounts to specific menu items or meals.
+     ***Could not complete***
 - **User Ratings**: Allow users to rate their dining experience.
-- **UUID**: Added UUID for each order to have unique order number.
+- **UUID**: Extra stretch goal, Added UUID for each order to have unique order number.
 
 ## Technologies Used
 

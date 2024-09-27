@@ -88,7 +88,7 @@ paymentForm.addEventListener("submit", function(e){
     orderModal.innerHTML = `
        <div id="order-complete" class="order-complete">
          <p>Thanks, ${name}! Your order is on it's way!</p>
-         <p class="txt-sm">Order number is <span class="txt-bold">${shortUuid}</span>
+         <p class="txt-sm">Your total is $${totalPrice}. Order number <span class="txt-bold">${shortUuid}</span></p>
          <div id="experience-rating" class="experience-rating">
             <p>Please rate your experience today</p>
             <span class="like-detail">
@@ -111,7 +111,7 @@ paymentForm.addEventListener("submit", function(e){
 
             setTimeout(() => {
                 location.reload()
-            }, 2000)            
+            }, 4000)            
    })
 })
 
