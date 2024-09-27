@@ -86,37 +86,28 @@ paymentForm.addEventListener("submit", function(e){
     orderModal.innerHTML = `
        <div id="order-complete" class="order-complete">
          <p>Thanks, ${name}! Your order is on it's way!</p>
-       </div>
+         <div id="experience-rating" class="experience-rating">
+            <p>Please rate your experience today</p>
+            <span class="like-detail">
+                <i class="fa-solid fa-heart like-class" id="1"></i>
+                <i class="fa-solid fa-heart like-class" id="2"></i>
+                <i class="fa-solid fa-heart like-class" id="3"></i>
+                <i class="fa-solid fa-heart like-class" id="4"></i>
+                <i class="fa-solid fa-heart like-class" id="5"></i>                    
+                </span>
+            </div>
+       </div>       
        `
     paymentModal.style.display= "none"
 
     paymentForm.reset()
-
-    setTimeout(() => {
-        orderModal.innerHTML = `
-        <div id="experience-rating" class="experience-rating">
-          <p>Please rate your experience with our app</p>
-          <span class="like-detail">
-            <i class="fa-solid fa-heart like-class" id="1"></i>
-            <i class="fa-solid fa-heart like-class" id="2"></i>
-            <i class="fa-solid fa-heart like-class" id="3"></i>
-            <i class="fa-solid fa-heart like-class" id="4"></i>
-            <i class="fa-solid fa-heart like-class" id="5"></i>                    
-            </span>
-        </div>
-        `        
-   }, 5000)
    
    orderModal.addEventListener("click", function(e){
             console.log(e.target.id)
-            e.target.classList.toggle("like")
-
-            setTimeout(() => {
-                orderModal.innerText = `A ${e.target.id}, Thank you ${name}`
-            }, 3000)            
+            e.target.classList.toggle("like")           
 
             setTimeout(() => {
                 location.reload()
-            }, 4000)            
+            }, 2000)            
    })
 })
