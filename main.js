@@ -1,4 +1,5 @@
 import { menuArray } from "/data.js"
+import { v4 as uuidv4 } from 'https://jspm.dev/uuid'
 
 // ======= Food items array =====
 function getFoodItemArr(foodArr) {
@@ -92,6 +93,30 @@ paymentForm.addEventListener("submit", function(e){
     paymentForm.reset()
 
     setTimeout(() => {
-        location.reload()
-    }, 5000)    
+        orderModal.innerHTML = `
+        <div id="experience-rating" class="experience-rating">
+          <p>Please rate your experience with our app</p>
+          <span class="like-detail">
+            <i class="fa-solid fa-heart like-class" id="1"></i>
+            <i class="fa-solid fa-heart like-class" id="2"></i>
+            <i class="fa-solid fa-heart like-class" id="3"></i>
+            <i class="fa-solid fa-heart like-class" id="4"></i>
+            <i class="fa-solid fa-heart like-class" id="5"></i>                    
+            </span>
+        </div>
+        `        
+   }, 5000)
+   
+   orderModal.addEventListener("click", function(e){
+            console.log(e.target.id)
+            e.target.classList.toggle("like")
+
+            setTimeout(() => {
+                orderModal.innerText = `A ${e.target.id}, Thank you ${name}`
+            }, 3000)            
+
+            setTimeout(() => {
+                location.reload()
+            }, 4000)            
+   })
 })
