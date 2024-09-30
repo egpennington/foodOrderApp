@@ -17,8 +17,8 @@
     <header id="header" class="header">
         <img src="/images/header.png" alt="Jimmy's Diner Image">
     </header>
-    <main id="data-input-el" class="data-input-el">        
-    </main>
+
+    <main id="data-input-el" class="data-input-el"></main>
 
     <!-- ============ Order modal ============================ -->
     <div id="order-modal" class="order-modal">
@@ -37,7 +37,7 @@
         <form id="paymentForm" autocomplete="on">
            <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2" aria-label="enter name">
            <input type="password" id="ccNum" name="ccNum" placeholder="Enter card number" required pattern="\d{8,}" title="Eight or more characters, no letters or special characters" inputmode="numeric" aria-label="enter credit card number">           
-           <input type="password" id="cvvNum" name="cvvNum" placeholder="Enter CVV"  aria-label="enter CVV number" minlength="3">
+           <input type="password" id="cvvNum" name="cvvNum" placeholder="Enter CVV"  aria-label="enter CVV number" inputmode="numeric" pattern="\d*" title="Please enter numbers only" minlength="3">
            <button type="submit" id="submit-btn" class="btn">Pay</button>
         </form>        
     </div>

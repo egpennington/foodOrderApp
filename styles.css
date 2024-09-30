@@ -24,6 +24,13 @@ body {
     width: 600px;
 }
 
+.header img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Limit to the original image width */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
 .food-display {
     display: flex;
     align-items: center;
@@ -201,7 +208,7 @@ body {
   /* ===== Order complete section ===== */
   .order-complete {
     width: 500px;
-    height: 180px;
+    height: 220px;
     padding: 20px;
     color: #065F46;
     background: #ECFDF5;
@@ -228,7 +235,7 @@ body {
 .experience-rating {
     width: 500px;
     height: 120px;
-    padding: 20px;
+    padding: 5px;
     color: #065F46;
     background: #ECFDF5;
     font-size: 1.2rem;
@@ -261,7 +268,52 @@ body {
     color: #DC2626;
 }
 
-.txt-sm { font-size: 1.5rem; }
+.txt-sm { font-size: 1.8rem; }
 .txt-bold { font-weight: bold; }
 
-  
+/* ====== Mobile responsive ===== */
+@media (max-width: 630px) {
+    .food-display {
+        flex-direction: column;
+        align-items: center;        
+        height: auto;
+        width: 100%;
+    }
+
+    .food-display .emoji {
+        margin: 5px 0 5px 0;
+        padding-bottom: 0;
+    }
+
+    .food-display .food-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .food-display .add-item {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 0.6rem;        
+    }
+
+    .header {
+        width: 420px;
+        height: auto;        
+        text-align: center;
+    }
+
+    .header img {
+        width: 400px;
+    }
+
+    .payment-modal,
+    .order-complete {
+        width: 400px;
+    }
+
+    .payment-modal form input,
+    .payment-modal .btn {
+        width: 368px;
+      }
+}
