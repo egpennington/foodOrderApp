@@ -1,0 +1,2 @@
+emoji is used from https://twemoji.twitter.com/
+used with permision
