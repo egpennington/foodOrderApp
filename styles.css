@@ -303,10 +303,7 @@ body {
         text-align: center;
     }
 
-    .header img {
-        width: 400px;
-    }
-
+    .header img,
     .payment-modal,
     .order-complete {
         width: 400px;
