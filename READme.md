@@ -81,3 +81,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgements
 
 - Design inspired by the Scrimba Figma file specs from MOD5.
+[https://v1.scrimba.com/scrim/cob0c4db7bc48b8539b2a6066]
