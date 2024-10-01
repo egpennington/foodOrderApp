@@ -31,8 +31,6 @@ let totalPrice = 0;
 
 addItemEls.forEach(addItemEl => {
     addItemEl.addEventListener("click", function(e) {
-        console.log(e.target.id)
-
         const item = menuArray.find(menuItem => menuItem.id === e.target.id)
 
         if (item) {
@@ -77,7 +75,6 @@ orderBtn.addEventListener("click", function(){
     for (let i = 0; i < emojis.length; i++) {
     emojis[i].style.opacity = "0.2";
     }
-    console.log("ordered entered")
 })
 
 // ======== Payment form data ====
@@ -100,13 +97,13 @@ paymentForm.addEventListener("submit", function(e){
          <div id="experience-rating" class="experience-rating">
             <p>Please rate your experience today</p>
             <span class="like-detail">
-                <i class="fa-solid fa-heart like-class" id="1"></i>
-                <i class="fa-solid fa-heart like-class" id="2"></i>
-                <i class="fa-solid fa-heart like-class" id="3"></i>
-                <i class="fa-solid fa-heart like-class" id="4"></i>
-                <i class="fa-solid fa-heart like-class" id="5"></i>                    
-                </span>
-            </div>
+                <i class="fa-regular fa-face-angry fa-xl" id="1"></i>
+                <i class="fa-regular fa-face-frown fa-xl" id="2"></i>
+                <i class="fa-regular fa-face-meh fa-xl" id="3"></i>
+                <i class="fa-regular fa-face-smile fa-xl" id="4"></i>
+                <i class="fa-regular fa-face-grin-hearts fa-xl"></i>                               
+            </span>
+         </div>
        </div>       
        `
     paymentModal.style.display= "none"

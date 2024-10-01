@@ -266,6 +266,7 @@ body {
 
 .like {
     color: #DC2626;
+    transform: scale(1.4)
 }
 
 .txt-sm { font-size: 1.8rem; }
