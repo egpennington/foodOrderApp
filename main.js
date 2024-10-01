@@ -116,7 +116,7 @@ paymentForm.addEventListener("submit", function(e){
 
             setTimeout(() => {
                 location.reload()
-            }, 4000)            
+            }, 500)            
    })
 })
 
