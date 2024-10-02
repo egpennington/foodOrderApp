@@ -1,3 +1,6 @@
+// check out https://cc-mobile-ordering-app.netlify.app/
+// check out https://github.com/clccode/mobile-ordering-app/blob/main/index.js
+
 import { menuArray } from "/data.js"
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid'
 
